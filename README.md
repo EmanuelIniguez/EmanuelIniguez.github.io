@@ -3,7 +3,7 @@
 Portafolio en forma de terminal con estilo retro   
 El live de la app : https://emanueliniguez.github.io/  
 
-![frame](https://github.com/EmanuelIniguez/emanuelIniguez.github.io/assets/84642858/4bed2372-b60b-4805-9b9b-33f38e060984)
+![Captura (1)](https://github.com/EmanuelIniguez/emanuelIniguez.github.io/assets/84642858/872f98fe-8fc4-426e-9cc5-3cdf3366830d)
 
 
 
