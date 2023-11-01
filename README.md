@@ -17,10 +17,8 @@ Tecnologias usadas :
  
 - CSS
 
-- Loading.IO
-
+- Javascript
+  
 - ASCII art generator 
 
-- Javascript
 
-- PicsArt app 
