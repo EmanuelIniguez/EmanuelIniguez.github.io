@@ -305,7 +305,7 @@ input:focus {
   }
 
   .profile-image {
-    width: 300px;
+    width: 400px;
     /* Reducir el ancho de la imagen del banner */
     height: auto;
     /* Ajustar la altura de la imagen de manera proporcional */
