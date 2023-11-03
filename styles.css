@@ -305,14 +305,14 @@ input:focus {
   }
 
   .profile-image {
-    width: 400px;
+    width: 300px;
     /* Reducir el ancho de la imagen del banner */
     height: auto;
     /* Ajustar la altura de la imagen de manera proporcional */
   }
 
   .terminal {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .footer {
