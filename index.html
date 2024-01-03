@@ -3,13 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Titulo de la pagina -->
   <title>Emanuel Iñiguez | Software Developer</title>
   <!-- Icono -->
-  <link rel="icon" href="./images/icon.png" type="image/png">
-
+  <link rel="icon" href="/icon.png" type="image/png">
   <!-- Fuentes agregadas -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,398 +23,62 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css">
+
 
 </head>
 
-
-
 <body>
+  <!-- Parallax Pixel Background Animation -->
+  <section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+  <!-- End of Parallax Pixel Background Animation -->
+
+  <a id="profilePicture" href="#popup">
+    <img src="./img/Capturaa.PNG" alt="Profile Picture">
+  </a>
 
 
-  <!-- Boton cambio de tema -->
-  <div>
-    <div id="toggle-button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="80px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-        <defs>
-          <mask id="ldio-ddk2jhc4gpj-mask">
-            <circle cx="50" cy="50" r="45" fill="#fff"></circle>
-          </mask>
-        </defs>
 
-      </svg></div>
+  <div id="userName" style="font-family: 'Space Mono', monospace;">
+    <h3> Emanuel Iñiguez</h3>
   </div>
-  <div>
-    <main>
-
-
-      <!-- Container de la terminal -->
-
-      <!-- Footer -->
-      <footer>
-
-        <div class="footer">
-
-          <h1></h1>
-          <br>
-          <div class="indent">
-            <i class="fa-brands fa-github fa-3x"></i> -
-            <span><a href="https://github.com/EmanuelIniguez" target="_blank" class="nameE">Github</a></span><br>
-          </div><br>
-
-          <div class="indent">
-            <i class="fa-brands fa-linkedin fa-3x"></i> - <span><a
-                href="https://www.linkedin.com/in/emanuel-i%C3%B1iguez/" target="_blank"
-                class="nameE">Linkedin</a></span>
-          </div><br>
-
-
-          <div class="indent">
-            <i class="fa-brands fa-google fa-3x"></i> - <span><a href="mailto:emakanalla@gmail.com" target="_blank"
-                class="nameE">Gmail</a></span>
-          </div>
-
-          <br>
-          <div class="indent">
-            <i class="fa-brands fa-instagram fa-3x"></i> - <span><a href="https://www.instagram.com/ema_iniguez/"
-                target="_blank" class="nameE">instagram</a></span>
-          </div><br>
-        </div>
-
-      </footer>
-
-
-      <div class="header">
-        <img src="./images/basht.png" alt="" class="bash" id="bash">
-        <span>C:\Windows\bash\Users\EmanuelIñiguez
-        </span>
-      </div>
-
-      <div class="terminal" id="terminalWindow">
-        <!-- Fecha en tiempo real -->
-        <section id="terminal">
-          <div class="command">Successful login - <span class="error" id="date"></span></div>
-          <!-- ASCII Banner -->
-          <br><img src="./images/bannerdark.png" alt="" class="profile-image"><br>
-
-
-          <!-- Presentacion-->
-          <div class="title">Mi Portfolio</div>
-          Bienvenidos a mi portfolio! Para ver la lista de commandos ingresá <span class="commandC">help</span>
-        </section>
-        <div class="prompt">
-          <span class="commandC">$</span> <span class="title">C:\Users\EmanuelIñiguez</span> <input id="promtInput" />
-        </div>
-      </div>
-    </main>
-    <div class="hidden" id="promptClone">
-      <span class="commandC">$</span> <span class="title"></span> <span class="promtCloneInput"></span>
-      <div class="promtCloneContent"></div>
-    </div>
-    <div class="hidden" id="help">
-
-      <!-- Menu de la terminal -->
-      <div class="sectionTitle">Podes ingresar cualquiera de estos comandos: </div>
-      <div class="indent">
-        <div>
-          <span class="commandC">about</span>:
-          <div class="indentT">Sobre mi</div>
-        </div>
-
-        <div>
-          <span class="commandC">skills</span>:
-          <div class="indent">Tecnologías con las que trabajo</div>
-        </div>
-
-        <div>
-          <span class="commandC">projects</span>:
-          <div class="indent">Listado de mis proyectos</div>
-        </div>
-
-        <div>
-          <span class="commandC">contact</span>:
-          <div class="indent">Redes de contacto</div>
-        </div>
-
-        <div>
-          <span class="commandC">clear</span>:
-          <div class="indent">Borrar el historial de la terminal</div>
-        </div>
-      </div>
-    </div>
-    <!-- Seccion de proyectos -->
-    <div class="hidden" id="projects">
-      <div class="sectionTitle">Proyectos:</div>
-      <div class="command">Personales:</div>
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Tateti</h1>
-        <p>Un clasico juego Tateti hecho en JavaScript.</p>
-        <p>$ Teclogias usadas :</p>
-        <p class="projects">JavaScript</p>
-        <span style="display: inline-block; margin-right: 20px;"><a
-            href="https://emanueliniguez.github.io/tateti.github.io/" class="title" target="_blank">Live</a></span><span
-          style="display: inline-block;"><a href="https://github.com/EmanuelIniguez/tateti.github.io" class="title"
-            target="_blank">Repositorio</a></span>
-
-      </div>
-
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Minimal Calculator</h1>
-        <p>Calculadora con estilo minimalista hecha en JavaScript.</p>
-        <p>$ Teclogias usadas :</p>
-        <p class="projects" style="display: inline;">JavaScript|</p>
-        <p class="projects" style="display: inline;">ReactJs|</p>
-        <p class="projects" style="display: inline;">Vite|</p>
-        <p class="projects" style="display: inline;">Css</p>
-
-        <p></p><span style="display: inline-block; margin-right: 20px;"><a
-            href="https://emanueliniguez.github.io/calculator.github.io/" class="title"
-            target="_blank">Live</a></span><span style="display: inline-block;"><a
-            href="https://github.com/EmanuelIniguez/calculator.github.io" class="title"
-            target="_blank">Repositorio</a></span></p>
-
-      </div>
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Mapa interactivo</h1>
-        <p>Mapa interactivo , con el proposito de mostrar bares y locales sin Tacc de la ciuadad Rosario mediante la API
-          de Google
-          Maps.</p>
-        <p>$ Teclogias usadas :</p>
-        <p class="projects" style="display: inline;">API de Google Maps
-        </p>
-        <p class="projects" style="display: inline;">JavaScript|</p>
-        <p class="projects" style="display: inline;">React JS|</p>
-        <p class="projects" style="display: inline;">Vite</p>
-
-        <p></p><span style="display: inline-block; margin-right: 20px;"><a
-            href="https://emanueliniguez.github.io/Mapita.github.io/" class="title" target="_blank">Live</a></span><span
-          style="display: inline-block;"><a href="https://github.com/EmanuelIniguez/Mapita.github.io" class="title"
-            target="_blank">Repositorio</a></span></p>
-
-      </div>
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Sticker Store</h1>
-        <p>
-          E-commerce ficticio hecho con Javascript y React :
-          Basado en tematica fantastica, implemente Midjouney para las imagenes y estilos pixelart.</p>
-        <p>$ Teclogias usadas :</p>
-        <p class="projects" style="display: inline;">API Google Maps|
-        </p>
-        <p class="projects" style="display: inline;">JavaScript|</p>
-        <p class="projects" style="display: inline;">React JS|</p>
-        <p class="projects" style="display: inline;">Vite|</p>
-        <p class="projects" style="display: inline;">Ness Css|</p>
-        <p class="projects" style="display: inline;">SweetAlert2|</p>
-        <p class="projects" style="display: inline;">Midjourney</p>
-
-        <p></p><span style="display: inline-block; margin-right: 20px;"><a
-            href="https://emanueliniguez.github.io/stickerstore.github.io/" class="title"
-            target="_blank">Live</a></span><span style="display: inline-block;"><a
-            href="https://github.com/EmanuelIniguez/stickerstore.github.io" class="title"
-            target="_blank">Repositorio</a></span></p>
-
-      </div>
-
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Gallery</h1>
-        <p>
-          Galeria con fotos que fui capturando hace varios años.</p>
-
-
-        <p><span style="display: inline-block; margin-right: 20px;"><a href="https://gallerymy.netlify.app/"
-              class="title" target="_blank">Live</a></span></p>
-
-      </div>
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Doom Fandom Page</h1>
-        <p>
-          Pagina tributo al clasico juego FPS Doom con estilo retro.
-          <br>La misma cuenta un breve historia del juego, soundtrack, enlaces de descarga, efectos y
-          jugarlo dentro de la web.<br>
-          Además tuve el honor de recibir una respuesta , de un mensaje que le envíe a uno de sus creadores , <a
-            href="./John Romero.pdf" target="_blank" class="nameE"></span>John Romero.</a>
-        </p>
-        <p>$ Teclogias usadas :</p>
-        <p class="projects" style="display: inline;">HTML
-        </p>
-        <p class="projects" style="display: inline;">|</p>
-        <p class="projects" style="display: inline;">API Winamp|</p>
-        <p class="projects" style="display: inline;">CSS ("Win95.CSS")|</p>
-        <p class="projects" style="display: inline;">JS-DOS V7 (Emulador del juego)</p>
-
-
-        <p></p><span style="display: inline-block; margin-right: 20px;"><a
-            href="https://emanueliniguez.github.io/DoomFandomPage.github.io/" class="title"
-            target="_blank">Live</a></span><span style="display: inline-block;"><a
-            href="https://github.com/EmanuelIniguez/DoomFandomPage.github.io" class="title"
-            target="_blank">Repositorio</a></span></p>
-
-      </div>
-
-
-      <div class="command">Freelance:</div>
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Ferre Web</h1>
-        <p>
-          Landing page para una empresa.<br>Tiene un estilo minimalista , hecha con un template , Canvas (logotipo) y
-          agregue
-          algunos efectos de animacion , colores y tipografia con CSS.<br></p>
-
-
-        <p><span style="display: inline-block; margin-right: 20px;"><a
-              href="https://emanueliniguez.github.io/FerreWeb.github.io/#" class="title" target="_blank">Live</a></span>
-        </p>
-
-      </div>
-
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">PortfolioP</h1>
-        <p>
-          Portfolio minimalista con una paleta de colores oscuros.</p>
-
-
-        <p><span style="display: inline-block; margin-right: 20px;"><a href="https://portfolio-ri.netlify.app/"
-              class="title" target="_blank">Live</a></span></p>
-
-      </div>
-
-
-      <div style="margin-bottom: 50px;">
-        <h1 class="command">Urbano Sport</h1>
-        <p>
-          Pagina para una tienda de ropa deportiva.Interactiva con liks y galeria de fotos</p>
-
-
-        <p><span style="display: inline-block; margin-right: 20px;"><a href="https://sport-urbano.netlify.app/"
-              class="title" target="_blank">Live</a></span></p>
-
-      </div>
-
-
-
-      <!-- Seccion de skills -->
-      <div class="hidden" id="skills">
-        <div class="sectionTitle">Skills: </div>
-        <div class="indent">
-          <div>
-            <span class="command">Programacion</span>:
-            <div class="indent">
-              <span class="imgA"><img class="rotate-image"
-                  src="https://icongr.am/devicon/javascript-original.svg?size=45&color=413939" title="JavaScript"
-                  height="40px" width="50px"></span>
-
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://swiffyslider.com/assets/img/brandlogos/css-3.svg" title="Css" height="40px"
-                  width="50px"></span>
-
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://icongr.am/devicon/react-original-wordmark.svg?size=45&color=currentColor" title="React"
-                  height="40px" width="50px"></span>
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" title="Bootstrap"
-                  height="40px" width="50px"></span>
-
-              <span class="imgA"><img class="rotate-image" src="https://vitejs.dev/logo.svg" title="ViteJS"
-                  height="40px" width="50px"></span>
-
-            </div>
-          </div>
-          <div>
-
-            <span class="command">Herramientas</span>:
-            <div class="indent">
-              <span class="imgA"><img class="rotate-image"
-                  src="https://w7.pngwing.com/pngs/319/426/png-transparent-github-gitlab-computer-icons-logo-github-thumbnail.png"
-                  title="Github" height="40px" width="45px"></span>
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://icongr.am/devicon/git-original.svg?size=45&color=currentColor" title="Git" height="40px"
-                  width="50px"></span>
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://w7.pngwing.com/pngs/828/432/png-transparent-npm-node-js-computer-icons-computer-software-installation-others-text-rectangle-logo.png"
-                  title="npm" height="40px" width="50px"></span>
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png" title="Netlify"
-                  height="40px" width="40px"></span>
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://w7.pngwing.com/pngs/246/288/png-transparent-firebase-hd-logo.png" title="Firebase"
-                  height="40px" width="40px"></span>
-
-              <span class="imgA"><img class="rotate-image"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png?20220821125247"
-                  title="Canva" height="40px" width="40px"></span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- Seccion de about me -->
-      <div class="hidden" id="about">
-        <div class="sectionTitle">Sobre mi: </div>
-        <div class="indent">
-          Hola! mi nombre es <a href="./Emanuel Iñiguez  Software Developer.pdf" target="_blank" class="nameE">Emanuel
-            Iñiguez</span></a>
-          y soy Software Developer.<br>Me gusta todo lo que tenga que ver con el uso de tecnologías de diseño en el área
-          de
-          frontend, implemento un estilo flat
-          desing y minimalista para mis apps.<br>
-          <p>También tengo hobbies como la fotografía , el running , actividades al aire libre y hace poco incursioné en
-            el
-            ciclismo de
-            ruta.
-            <br>Me apasiona aprender cosas nuevas e interesantes.<br>
-          </p>
-        </div>
-      </div>
-
-
-      <!-- Seccion de contacto -->
-      <div class="hidden" id="contact">
-        <div class="sectionTitle">Redes de contacto: </div>
-        <br>
-        <div class="indent">
-          <i class="fa-brands fa-github fa-3x"></i> - <span><a href="https://github.com/EmanuelIniguez?tab=repositories"
-              target="_blank" class="nameE">https://github.com/EmanuelIniguez</a></span>
-        </div><br>
-
-        <div class="indent">
-          <i class="fa-brands fa-linkedin fa-3x"></i> - <span><a
-              href="https://www.linkedin.com/in/emanuel-i%C3%B1iguez/" target="_blank"
-              class="nameE">https://www.linkedin.com/in/emanuel-i%C3%B1iguez/
-            </a></span>
-        </div><br>
-
-
-        <div class="indent">
-          <i class="fa-brands fa-google fa-3x"></i> - <span><a href="mailto:emakanalla@gmail.com" target="_blank"
-              class="nameE">emakanalla@gmail.com</a></span>
-        </div>
-
-        <br>
-        <div class="indent">
-          <i class="fa-brands fa-instagram fa-3x"></i> - <span><a href="https://www.instagram.com/ema_iniguez/"
-              target="_blank" class="nameE">https://www.instagram.com/ema_iniguez/</a></span>
-        </div><br>
-
-
-
-
-
-      </div>
-
+  <div id="userName" style="font-family: 'Space Mono', monospace; color:#AC87C5">
+    <h2>Software Developer</h2>
+  </div>
+
+  <div id="links">
+    <a class="link" href="./sobreMi.html"><i class="fas fa-user">&nbsp;</i>
+      Sobre mi
+    </a>
+    <a class="link" href="./skills.html"><i class="fas fa-desktop">&nbsp;</i>
+      Skills
+    </a>
+    <a class="link" href="./proyectos.html"><i class="fas fa-code">&nbsp;</i>
+      Proyectos
+    </a>
+  </div>
+
+  <!-- Contact -->
+  <div style="text-align: center;">
+    <a href="https://github.com/EmanuelIniguez?tab=repositories" target="_blank" rel="nofollow"
+      style="text-decoration: none;">
+      <img src="./img/social.png" class="imgF" alt="Github">
+    </a>
+    <a href="https://www.linkedin.com/in/emanuel-i%C3%B1iguez/" target="_blank" rel="nofollow"
+      style="text-decoration: none;">
+      <img src="./img/linkedin (1).png" class="imgF" alt="Linkedin">
+    </a>
+    <a href="mailto:emakanalla@gmail.com" target="_blank" rel="nofollow" style="text-decoration: none;">
+      <img src="./img/google.png" class="imgF" alt="Google">
+    </a>
+    <a href="https://www.instagram.com/ema_iniguez/" target="_blank" rel="nofollow" style="text-decoration: none;">
+      <img src="./img/instagram.png" class="imgF" alt="Instagram">
+    </a>
+  </div>
 
 
 
@@ -424,6 +86,5 @@
 
 
 </body>
-
 
 </html>
