@@ -19,7 +19,20 @@ body {
     background-size: cover;
     position: relative;
     transition: transform .3s ease-in-out;
+    animation: fade-in 1s ease-in-out forwards;
 }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
 
 #profilePicture,
 #profilePicture img {
