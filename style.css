@@ -109,6 +109,7 @@ body {
 }
 
 .link:hover {
+    background-color: #ffff;
     transform: translateY(-5px);
     /* Mueve la caja hacia arriba cuando el mouse está encima */
 }
