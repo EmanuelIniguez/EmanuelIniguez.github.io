@@ -43,35 +43,38 @@ body {
     margin: 40px auto 20px;
     border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
-} 
+}
 
 @keyframes zoom {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  #profilePicture,
-  #profilePicture img {
-      position: relative;
-      width: 175px;
-      height: 165px;
-      display: block;
-      margin: 40px auto 20px;
-      border-radius: 50%;
-      -webkit-tap-highlight-color: transparent;
-  }
-  
-  #profilePicture img:hover {
-      animation: zoom 0.7s ease; /* Aplica la animación de zumbido al hacer hover */
-  }
-  
+}
+
+#profilePicture,
+#profilePicture img {
+    position: relative;
+    width: 175px;
+    height: 165px;
+    display: block;
+    margin: 40px auto 20px;
+    border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#profilePicture img:hover {
+    animation: zoom 0.7s ease;
+    /* Aplica la animación de zumbido al hacer hover */
+}
+
 
 #userName {
     color: var(--accentColor);
@@ -141,7 +144,7 @@ body {
     background-color: #ffff;
     transform: translateY(-5px);
     /* Mueve la caja hacia arriba cuando el mouse está encima */
-} 
+}
 
 
 
@@ -167,7 +170,7 @@ body {
     box-shadow: 20px 20px 10px -3px #00000040;
 
 
-} 
+}
 
 @media (hover: hover) {
     .link1:hover {
@@ -193,7 +196,7 @@ body {
     background-color: #484C7F;
     transform: translateY(-5px);
     /* Mueve la caja hacia arriba cuando el mouse está encima */
-} 
+}
 
 
 
@@ -228,9 +231,9 @@ body {
 
 .linkA:hover {
     color: #131B25;
-    background-color:#7469B6;
+    background-color: #7469B6;
     transform: translateY(-5px);
-    
+
     /* Mueve la caja hacia arriba cuando el mouse está encima */
 }
 
@@ -322,6 +325,15 @@ body {
     transform: rotate(360deg);
 
 }
+
+.imageA {
+    transition: transform 0.5s ease-in-out;
+}
+
+.imageA:hover {
+    transform: rotateY(360deg);
+}
+
 
 
 /*-------------------------popup------------------------*/
